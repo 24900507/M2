@@ -21,7 +21,7 @@ int main() {
     scanf("%d", &N);
     printf("Even numbers from %d to %d are:\n", M, N);
     if (M % 2 != 0) {
-        M++; // If M is odd, move to the next even number
+        M++;
     }
     for (int i = M; i <= N; i += 2) {
         printf("%d ", i);
@@ -151,8 +151,8 @@ int main() {
     scanf("%d", &num);
     for (; num > 0; num /= 10) {
         digit = num % 10; // Get last digit
-        if (digit % 2 != 0) { // Check if digit is odd
-            sum += digit; // Add odd digit to sum
+        if (digit % 2 != 0) { 
+            sum += digit;
         }
     }
     printf("Sum of odd digits: %d\n", sum);
